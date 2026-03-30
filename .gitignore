@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+.venv/
+env/
+
+# Keras Tuner results (besar, tidak perlu di-push)
+tuner_*/
+tuner_results*/
+
+# Model files (besar)
+*.h5
+*.keras
+*.pkl
+*.joblib
+
+# Data processed (bisa di-generate ulang)
+data/processed/*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
