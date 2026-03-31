@@ -1,0 +1,41 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.21.1",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1903954faf09a68d969bb22ca8ca3c15",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KUQd",
+      "code_hash": "5670048b190ff45a203df77c18da7d6a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KUQd-0' random-id='21bd4e1d-5c86-65d1-9b28-6bd017889d3f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;oh ternyata bestienya koruptor kakap pertamina riva siahaan pant mulutnya andre kepanasan terus sama ahok rupanya dia bela kawannya dre kamu dapat amplop pertamax oplosan juga ya katanya wakil rakyat klu kayak gini kamu wakil para koruptor dong&#92;&quot;,&#92;&quot;Label&#92;&quot;:0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;salah satu kelebihan pertamax oplosan bisa merubah suara knalpot motor&#92;&quot;,&#92;&quot;Label&#92;&quot;:0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;belum jg win&#92;&quot;,&#92;&quot;Label&#92;&quot;:1},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;td pagi buka tiktok ada yg lucu skrg di konoha smua serba palsu beli pertamax isinya pertalite pilih si gemoyyy isinya jokowoooyyy&#92;&quot;,&#92;&quot;Label&#92;&quot;:0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron dan amplop pertamina oplosan&#92;&quot;,&#92;&quot;Label&#92;&quot;:0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;turun dari angkot bilang assalamualaikum&#92;&quot;,&#92;&quot;Label&#92;&quot;:1},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman kaeron dpr partai demokrat&#92;&quot;,&#92;&quot;Label&#92;&quot;:1},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron dpr dan terima amplop&#92;&quot;,&#92;&quot;Label&#92;&quot;:0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;terimakasih ya allah ata izinmu hari ini kami masih diberi nafas&#92;&quot;,&#92;&quot;Label&#92;&quot;:2},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;aku pegang onic&#92;&quot;,&#92;&quot;Label&#92;&quot;:1}]&quot;' data-total-rows='49863' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;clean_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;Label&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false' data-download-file-name='&quot;df&quot;'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PTOM",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
