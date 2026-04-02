@@ -27,7 +27,7 @@ tuner_results*/
 *.joblib
 
 # Data processed (bisa di-generate ulang)
-data/processed/*.csv
+#data/processed/*.csv
 
 # OS
 .DS_Store
