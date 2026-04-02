@@ -47,7 +47,7 @@ BALANCING_METHODS = {
 
 # ============= FEATURE EXTRACTION =============
 
-def prepare_features(df, dataset_name=''):
+def prepare_features(df, dataset_name='',kolom_y='label'):
     """
     TF-IDF Vectorization + one-hot encoding.
 
@@ -69,7 +69,7 @@ def prepare_features(df, dataset_name=''):
     )
 
     X = tfidf.fit_transform(df['clean_text'])
-    y = df['label'].values
+    y = df[kolom_y].values
     y_one_hot = to_categorical(y, num_classes=3)
 
     if dataset_name:
@@ -218,7 +218,7 @@ def run_multi_experiment(X, y_one_hot, model_type, bal_name, bal_class,
 
 # ============= RUN ALL EXPERIMENTS =============
 
-def run_all_experiments(df_a, df_b, n_runs=NUM_RUNS, seeds=SEEDS):
+def run_all_experiments(df_a, df_b, n_runs=NUM_RUNS, seeds=SEEDS, kolom_y_a='label',kolom_y_b='label'):
     """
     Jalankan semua eksperimen untuk kedua dataset.
 
@@ -235,8 +235,8 @@ def run_all_experiments(df_a, df_b, n_runs=NUM_RUNS, seeds=SEEDS):
     print("\n" + "=" * 60)
     print("PREPARE FEATURES")
     print("=" * 60)
-    X_a, y_a, y_oh_a, tfidf_a = prepare_features(df_a, "Dataset A (Annotator 1)")
-    X_b, y_b, y_oh_b, tfidf_b = prepare_features(df_b, "Dataset B (Annotator 2)")
+    X_a, y_a, y_oh_a, tfidf_a = prepare_features(df_a, "Dataset A (Annotator 1)",kolom_y=kolom_y_a)
+    X_b, y_b, y_oh_b, tfidf_b = prepare_features(df_b, "Dataset B (Annotator 2)",kolom_y=kolom_y_b)
 
     datasets = {
         'Dataset_A': (X_a, y_oh_a),

@@ -1,0 +1,107 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.22.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "44578a30e1e01a002f77c11d33469a74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DGIx",
+      "code_hash": "864a0a52c6016a756ea9f2d9c59e58e4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mDqQ",
+      "code_hash": "9408c7d0053b279135c4be5b68faad47",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='mDqQ-0' random-id='c8a46deb-0248-6b4b-2221-fd2c203c2969'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;nyata bestienya koruptor kakap pertamina riva siahaan pant mulut andre panas terus sama ahok rupa bela kawan dre kamu amplop pertamax oplos ya kata wakil rakyat klu kayak gin kamu wakil koruptor dong&#92;&quot;,&#92;&quot;Label&#92;&quot;:0,&#92;&quot;char_len&#92;&quot;:244,&#92;&quot;word_count&#92;&quot;:38},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;salah satu lebih pertamax oplos rubah suara knalpot motor&#92;&quot;,&#92;&quot;Label&#92;&quot;:0,&#92;&quot;char_len&#92;&quot;:70,&#92;&quot;word_count&#92;&quot;:10},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;juga win&#92;&quot;,&#92;&quot;Label&#92;&quot;:1,&#92;&quot;char_len&#92;&quot;:12,&#92;&quot;word_count&#92;&quot;:3},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;td pagi buka tiktok yang lucu sekarang konoha smua serba palsu beli pertamax isi pertalite pilih si gemoyyy isi jokowoooyyy&#92;&quot;,&#92;&quot;Label&#92;&quot;:0,&#92;&quot;char_len&#92;&quot;:130,&#92;&quot;word_count&#92;&quot;:22},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron amplop pertamina oplos&#92;&quot;,&#92;&quot;Label&#92;&quot;:0,&#92;&quot;char_len&#92;&quot;:43,&#92;&quot;word_count&#92;&quot;:6},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;turun angkot bilang assalamualaikum&#92;&quot;,&#92;&quot;Label&#92;&quot;:1,&#92;&quot;char_len&#92;&quot;:40,&#92;&quot;word_count&#92;&quot;:5},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman kaeron dpr partai demokrat&#92;&quot;,&#92;&quot;Label&#92;&quot;:1,&#92;&quot;char_len&#92;&quot;:33,&#92;&quot;word_count&#92;&quot;:5},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron dpr terima amplop&#92;&quot;,&#92;&quot;Label&#92;&quot;:0,&#92;&quot;char_len&#92;&quot;:36,&#92;&quot;word_count&#92;&quot;:6},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;terimakasih allah ata izin hari kami beri nafas&#92;&quot;,&#92;&quot;Label&#92;&quot;:2,&#92;&quot;char_len&#92;&quot;:64,&#92;&quot;word_count&#92;&quot;:11},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;pegang onic&#92;&quot;,&#92;&quot;Label&#92;&quot;:1,&#92;&quot;char_len&#92;&quot;:15,&#92;&quot;word_count&#92;&quot;:3}]&quot;' data-total-rows='33685' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;clean_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;Label&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;char_len&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;word_count&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UIKA",
+      "code_hash": "834c148635a77acf03741738649671cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='UIKA-0' random-id='0d704916-73e8-f883-67fa-fae237bf401f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;nyata bestienya koruptor kakap pertamina riva siahaan pant mulut andre panas terus sama ahok rupa bela kawan dre kamu amplop pertamax oplos ya kata wakil rakyat klu kayak gin kamu wakil koruptor dong&#92;&quot;,&#92;&quot;label&#92;&quot;:0.0,&#92;&quot;char_len&#92;&quot;:244,&#92;&quot;word_count&#92;&quot;:38},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;salah satu lebih pertamax oplos rubah suara knalpot motor&#92;&quot;,&#92;&quot;label&#92;&quot;:2.0,&#92;&quot;char_len&#92;&quot;:70,&#92;&quot;word_count&#92;&quot;:10},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;juga win&#92;&quot;,&#92;&quot;label&#92;&quot;:1.0,&#92;&quot;char_len&#92;&quot;:12,&#92;&quot;word_count&#92;&quot;:3},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;td pagi buka tiktok yang lucu sekarang konoha smua serba palsu beli pertamax isi pertalite pilih si gemoyyy isi jokowoooyyy&#92;&quot;,&#92;&quot;label&#92;&quot;:0.0,&#92;&quot;char_len&#92;&quot;:130,&#92;&quot;word_count&#92;&quot;:22},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron amplop pertamina oplos&#92;&quot;,&#92;&quot;label&#92;&quot;:0.0,&#92;&quot;char_len&#92;&quot;:43,&#92;&quot;word_count&#92;&quot;:6},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;turun angkot bilang assalamualaikum&#92;&quot;,&#92;&quot;label&#92;&quot;:0.0,&#92;&quot;char_len&#92;&quot;:40,&#92;&quot;word_count&#92;&quot;:5},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman kaeron dpr partai demokrat&#92;&quot;,&#92;&quot;label&#92;&quot;:0.0,&#92;&quot;char_len&#92;&quot;:33,&#92;&quot;word_count&#92;&quot;:5},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron dpr terima amplop&#92;&quot;,&#92;&quot;label&#92;&quot;:0.0,&#92;&quot;char_len&#92;&quot;:36,&#92;&quot;word_count&#92;&quot;:6},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;terimakasih allah ata izin hari kami beri nafas&#92;&quot;,&#92;&quot;label&#92;&quot;:1.0,&#92;&quot;char_len&#92;&quot;:64,&#92;&quot;word_count&#92;&quot;:11},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;pegang onic&#92;&quot;,&#92;&quot;label&#92;&quot;:1.0,&#92;&quot;char_len&#92;&quot;:15,&#92;&quot;word_count&#92;&quot;:3}]&quot;' data-total-rows='33685' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;clean_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;label&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;char_len&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;word_count&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ALhw",
+      "code_hash": "3f368b74963467da28a8a2e5a1523669",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zAeR",
+      "code_hash": "f6c15480ab81fb1445dec39a683f0f8b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='zAeR-0' random-id='35cbca73-a6b6-7435-b0f2-ada74d55ebcd'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;nyata bestienya koruptor kakap pertamina riva siahaan pant mulut andre panas terus sama ahok rupa bela kawan dre kamu amplop pertamax oplos ya kata wakil rakyat klu kayak gin kamu wakil koruptor dong&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:0,&#92;&quot;label_rendika_y&#92;&quot;:0.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;salah satu lebih pertamax oplos rubah suara knalpot motor&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:0,&#92;&quot;label_rendika_y&#92;&quot;:2.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;juga win&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:1,&#92;&quot;label_rendika_y&#92;&quot;:1.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;td pagi buka tiktok yang lucu sekarang konoha smua serba palsu beli pertamax isi pertalite pilih si gemoyyy isi jokowoooyyy&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:0,&#92;&quot;label_rendika_y&#92;&quot;:0.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron amplop pertamina oplos&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:0,&#92;&quot;label_rendika_y&#92;&quot;:0.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;turun angkot bilang assalamualaikum&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:1,&#92;&quot;label_rendika_y&#92;&quot;:0.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman kaeron dpr partai demokrat&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:1,&#92;&quot;label_rendika_y&#92;&quot;:0.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;herman khaeron dpr terima amplop&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:0,&#92;&quot;label_rendika_y&#92;&quot;:0.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;terimakasih allah ata izin hari kami beri nafas&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:2,&#92;&quot;label_rendika_y&#92;&quot;:1.0},{&#92;&quot;clean_text&#92;&quot;:&#92;&quot;pegang onic&#92;&quot;,&#92;&quot;label_rendika_x&#92;&quot;:1,&#92;&quot;label_rendika_y&#92;&quot;:1.0}]&quot;' data-total-rows='33685' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;clean_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;label_rendika_x&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;label_rendika_y&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uDFK",
+      "code_hash": "00b430748f61d330667615eb0712d561",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Jumlah data yang bisa dibandingkan: 33685\nAgreement Rate: 0.6981 (69.805551%)\nCohen's Kappa: 0.2350\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}
