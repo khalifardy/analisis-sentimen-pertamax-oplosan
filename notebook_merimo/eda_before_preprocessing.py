@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.21.1"
+__generated_with = "0.22.0"
 app = marimo.App(width="medium")
 
 
@@ -22,7 +22,7 @@ def _():
 
 @app.cell
 def _(pd):
-    df = pd.read_csv('data/raw/mergeddataset.csv')
+    df = pd.read_csv('data/raw/data_kesepakatan.csv')
     df
     return (df,)
 

@@ -157,3 +157,29 @@ def show_balance_distribution(y_data, method_name):
     for u, c in zip(unique, counts):
         print(f"  {LABEL_NAMES_MAP[int(u)]}: {c} ({c/total*100:.2f}%)")
     print(f"  Total: {total}")
+
+def load_kesepakatan_data(path='data/raw/data_kesepakatan.csv'):
+    """
+    load dan bersihkan datakesepakatan 2 annotator
+    
+    returns:
+    - df: DataFrame (kolom: full_text, label)
+    """
+    
+    df = pd.read_csv(path, low_memory=False)
+    
+    #Konversi label ke numerik, hapus yang invalid (9,10,11,'',8)
+    df['label'] = pd.to_numeric(df['label'], errors='coerce')
+    df = df[df['label'].isin([0,1,2])].copy()
+    df['label'] = df['label'].astype(int)
+    
+    # BUang teks kosong/Nan
+    df = df[df['full_text'].notna()]
+    df = df[df['full_text'].str.strip() != '']
+    df = df.reset_index(drop=True)
+    
+    print("Dataset Kesepakatan -Total: len(df)")
+    print(df['label'].value_counts().sort_index())
+    
+    return df
+    

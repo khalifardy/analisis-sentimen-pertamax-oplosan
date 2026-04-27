@@ -277,3 +277,48 @@ def run_all_experiments(df_a, df_b, n_runs=NUM_RUNS, seeds=SEEDS, kolom_x_a='cle
                 )
 
     return all_results
+
+def run_experiments_single_dataset(df, dataset_name='Dataset_kesepakatan',
+                                   kolom_x='clean_text', kolom_y='label',
+                                   n_runs=NUM_RUNS, seeds=SEEDS):
+    """
+    Jalankan semua eksperimen untuk 1 dataset (kesepakatan)
+    
+    parameters:
+    - df: DataFrame dataset kesepakatan
+    - dataset_name: nama dataset
+    - kolom_x: nama kolom teks
+    - kolom_y: nama kolom label
+    - n_runs: jumlah run per kombinasi
+    - seeds: list random seed
+    
+    Returns:
+    - all_results: nested dict [dataset][balancing][model] = metrik
+    """
+    
+    print("\n" + "=" * 60)
+    print("PREPARE FEATURES")
+    print("="*60)
+    
+    X_train, y_train_oh, X_test, y_test_oh, tfidf = prepare_features(
+        df, dataset_name,kolom_x=kolom_x,kolom_y=kolom_y,seed=seeds[0]
+        )
+    
+    all_results = {dataset_name:{}}
+    
+    print(f"\n{'#'*70}")
+    print(f" DATASET: {dataset_name}")
+    print(f"{'#'*70}")
+    
+    for bal_name, bal_class in BALANCING_METHODS.items():
+        all_results[dataset_name][bal_name] = {}
+        
+        for model_name, model_type in MODEL_CONFIGS.items():
+            print(f"\n>> {dataset_name} | {bal_name} | {model_name}")
+            all_results[dataset_name][bal_name][model_name] = run_multi_experiment(
+                X_train, y_train_oh, X_test, y_test_oh, 
+                model_type, bal_name, bal_class,
+                n_runs=n_runs, seeds=seeds
+                )
+    
+    return all_results

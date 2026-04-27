@@ -38,7 +38,7 @@ def print_comparison_table(all_results, metric='accuracy'):
     bal_names = list(BALANCING_METHODS.keys())
     model_names = list(MODEL_CONFIGS.keys())
 
-    for ds_name in ['Dataset_A', 'Dataset_B']:
+    for ds_name in all_results.keys(): #['Dataset_A', 'Dataset_B']:
         if ds_name not in all_results:
             continue
 
@@ -58,7 +58,9 @@ def print_comparison_table(all_results, metric='accuracy'):
             print(row)
 
     # Tabel selisih
-    if 'Dataset_A' in all_results and 'Dataset_B' in all_results:
+    #if 'Dataset_A' in all_results and 'Dataset_B' in all_results:
+    ds_names = list(all_results.keys())
+    if len(ds_names) == 2:
         print(f"\n{'=' * 95}")
         print(f"SELISIH {metric.upper()}: Dataset A - Dataset B")
         print(f"{'=' * 95}")
@@ -70,8 +72,8 @@ def print_comparison_table(all_results, metric='accuracy'):
         for model_name in model_names:
             row = f"{model_name:<22}"
             for bal_name in bal_names:
-                a = all_results['Dataset_A'][bal_name][model_name][metric]['mean']
-                b = all_results['Dataset_B'][bal_name][model_name][metric]['mean']
+                a = all_results[ds_names[0]][bal_name][model_name][metric]['mean']
+                b = all_results[ds_names[1]][bal_name][model_name][metric]['mean']
                 diff = a - b
                 sign = "+" if diff >= 0 else ""
                 row += f"       {sign}{diff:.4f}  "
