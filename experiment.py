@@ -24,6 +24,21 @@ def _(pd):
 
 @app.cell
 def _():
+    import os
+    os.environ['TF_GPU_ALLOCATOR'] = 'cuda_malloc_async'
+
+    import tensorflow as tf
+
+    gpus = tf.config.list_physical_device('GPU')
+    if gpus:
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
+        
+    return (os,)
+
+
+@app.cell
+def _():
     import marimo as mo
 
     return (mo,)

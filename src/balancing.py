@@ -123,6 +123,7 @@ def run_single_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model
         y_pred = np.argmax(model.predict(X_test), axis=1)
         y_true = np.argmax(y_one_hot_test, axis=1)
         del model; gc.collect(); K.clear_session()
+        tf.compat.v1.reset_default_graph()
 
     elif model_type == 'mlp_advance':
         model = create_mlp_advance(X_res.shape[1])
@@ -131,6 +132,7 @@ def run_single_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model
         y_pred = np.argmax(model.predict(X_test), axis=1)
         y_true = np.argmax(y_one_hot_test, axis=1)
         del model; gc.collect(); K.clear_session()
+        tf.compat.v1.reset_default_graph()
 
     elif model_type == 'mlp_tuner':
         builder = make_tuner_builder(X_res.shape[1])
@@ -147,6 +149,7 @@ def run_single_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model
         y_pred = np.argmax(best_model.predict(X_test), axis=1)
         y_true = np.argmax(y_one_hot_test, axis=1)
         del best_model, tuner; gc.collect(); K.clear_session()
+        tf.compat.v1.reset_default_graph()
 
     elif model_type == 'naive_bayes':
         y_train_1d = np.argmax(y_res, axis=1)
