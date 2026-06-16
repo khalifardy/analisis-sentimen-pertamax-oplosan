@@ -1,0 +1,107 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.22.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "44578a30e1e01a002f77c11d33469a74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "6eccf0ae96b31de27c0195c2a6b63312",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "9408c7d0053b279135c4be5b68faad47",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='a9120890-3764-e7e6-3884-fabdcc5705e6'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Oh ternyata bestienya koruptor kakap pertamina riva siahaan pantes mulutnya andre kepanasan terus sama ahok. Rupanya dia bela kawannya. Dre kamu dapat amplop pertamax oplosan juga ya? Katanya wakil rakyat klu kayak gini kamu wakil para koruptor dong!&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Salah satu kelebihan pertamax oplosan bisa merubah suara knalpot motor https://t.co/DyMERXjeEi&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Belum jg win&#92;&quot;,&#92;&quot;label&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;@Bang_Ramzan Td pagi buka tiktok ada yg lucu Skrg di Konoha smua serba palsu Beli Pertamax isinya pertalite Pilih si gemoyyy isinya jokowoooyyy&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman khaeron dan amplop pertamina ? #pertamax oplosan @ch_chotimah2 @Dennysiregar7&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Turun dari angkot bilang assalamualaikum...&#92;&quot;,&#92;&quot;label&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman Kaeron DPR partai demokrat #pertamina #pertamax @tribunnews @liputan6dotcom&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman Khaeron DPR dan terima amplop ? #pertamina #pertamax @KejaksaanRI&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Terimakasih Ya Allah atas izinMu hari ini kami masih diberi nafas&#92;&quot;,&#92;&quot;label&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;@faestyz1 Aku pegang ONIC&#92;&quot;,&#92;&quot;label&#92;&quot;:1}]&quot;' data-total-rows='34993' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;full_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;label&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "834c148635a77acf03741738649671cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='fb79c377-90b6-312e-9ab4-dd8c84ad130f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Oh ternyata bestienya koruptor kakap pertamina riva siahaan pantes mulutnya andre kepanasan terus sama ahok. Rupanya dia bela kawannya. Dre kamu dapat amplop pertamax oplosan juga ya? Katanya wakil rakyat klu kayak gini kamu wakil para koruptor dong!&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Salah satu kelebihan pertamax oplosan bisa merubah suara knalpot motor https://t.co/DyMERXjeEi&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Belum jg win&#92;&quot;,&#92;&quot;label&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;@Bang_Ramzan Td pagi buka tiktok ada yg lucu Skrg di Konoha smua serba palsu Beli Pertamax isinya pertalite Pilih si gemoyyy isinya jokowoooyyy&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman khaeron dan amplop pertamina ? #pertamax oplosan @ch_chotimah2 @Dennysiregar7&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Turun dari angkot bilang assalamualaikum...&#92;&quot;,&#92;&quot;label&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman Kaeron DPR partai demokrat #pertamina #pertamax @tribunnews @liputan6dotcom&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman Khaeron DPR dan terima amplop ? #pertamina #pertamax @KejaksaanRI&#92;&quot;,&#92;&quot;label&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Terimakasih Ya Allah atas izinMu hari ini kami masih diberi nafas&#92;&quot;,&#92;&quot;label&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;@faestyz1 Aku pegang ONIC&#92;&quot;,&#92;&quot;label&#92;&quot;:1}]&quot;' data-total-rows='34993' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;full_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;label&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "a8d0255c9f74fcb47982425bebcd4ebd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "f6c15480ab81fb1445dec39a683f0f8b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='068fcff8-711c-5df6-79d0-d826e31938be'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Oh ternyata bestienya koruptor kakap pertamina riva siahaan pantes mulutnya andre kepanasan terus sama ahok. Rupanya dia bela kawannya. Dre kamu dapat amplop pertamax oplosan juga ya? Katanya wakil rakyat klu kayak gini kamu wakil para koruptor dong!&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:0,&#92;&quot;label_fadly&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Salah satu kelebihan pertamax oplosan bisa merubah suara knalpot motor https://t.co/DyMERXjeEi&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:0,&#92;&quot;label_fadly&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Belum jg win&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:1,&#92;&quot;label_fadly&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;@Bang_Ramzan Td pagi buka tiktok ada yg lucu Skrg di Konoha smua serba palsu Beli Pertamax isinya pertalite Pilih si gemoyyy isinya jokowoooyyy&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:0,&#92;&quot;label_fadly&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman khaeron dan amplop pertamina ? #pertamax oplosan @ch_chotimah2 @Dennysiregar7&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:0,&#92;&quot;label_fadly&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Turun dari angkot bilang assalamualaikum...&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:1,&#92;&quot;label_fadly&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman Kaeron DPR partai demokrat #pertamina #pertamax @tribunnews @liputan6dotcom&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:0,&#92;&quot;label_fadly&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Herman Khaeron DPR dan terima amplop ? #pertamina #pertamax @KejaksaanRI&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:0,&#92;&quot;label_fadly&#92;&quot;:0},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;Terimakasih Ya Allah atas izinMu hari ini kami masih diberi nafas&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:1,&#92;&quot;label_fadly&#92;&quot;:1},{&#92;&quot;full_text&#92;&quot;:&#92;&quot;@faestyz1 Aku pegang ONIC&#92;&quot;,&#92;&quot;label_rendika&#92;&quot;:1,&#92;&quot;label_fadly&#92;&quot;:1}]&quot;' data-total-rows='35037' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;full_text&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;label_rendika&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;label_fadly&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "2877464694fa5f2e3ef89ae127a9311a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Jumlah data yang bisa dibandingkan: 35037\nAgreement Rate: 0.9519 (95.187944%)\nCohen's Kappa: 0.8602\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}

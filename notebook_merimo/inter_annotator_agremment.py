@@ -14,8 +14,8 @@ def _():
 
 @app.cell
 def _(pd):
-    df_rendika = pd.read_csv('data/processed/preprocessed_dataset_rendika.csv')
-    df_faldy = pd.read_csv('data/processed/preprocessed_dataset_fadly.csv')
+    df_rendika = pd.read_csv('dataset_saya.csv')
+    df_faldy = pd.read_csv('dataset_fadly.csv')
     return df_faldy, df_rendika
 
 
@@ -36,9 +36,9 @@ def _(df_faldy, df_rendika, pd):
     # merge berdasarkan clean_text untuk hitung agreement
 
     df_agreement = pd.merge(
-        df_rendika[['clean_text', 'Label']].rename(columns={'Label':'label_rendika'}),
-        df_faldy[['clean_text', 'label']].rename(columns={'label':'label_rendika'}),
-        on='clean_text', how='inner'
+        df_rendika[['full_text', 'label']].rename(columns={'label':'label_rendika'}),
+        df_faldy[['full_text', 'label']].rename(columns={'label':'label_fadly'}),
+        on='full_text', how='inner'
     )
 
     df_agreement.to_csv('data_merge_rendika_fadly.csv',index=False)
@@ -53,9 +53,9 @@ def _(df_agreement):
 
 @app.cell
 def _(cohen_kappa_score, df_agreement):
-    agreement_rate = (df_agreement['label_rendika_x']==df_agreement['label_rendika_y']).mean()
+    agreement_rate = (df_agreement['label_rendika']==df_agreement['label_fadly']).mean()
 
-    kappa_score = cohen_kappa_score(df_agreement['label_rendika_x'], df_agreement['label_rendika_y'])
+    kappa_score = cohen_kappa_score(df_agreement['label_rendika'], df_agreement['label_fadly'])
 
     print(f"Jumlah data yang bisa dibandingkan: {len(df_agreement)}")
     print(f"Agreement Rate: {agreement_rate:.4f} ({agreement_rate*100:2f}%)")

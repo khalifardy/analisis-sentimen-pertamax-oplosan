@@ -277,3 +277,60 @@ def run_all_experiments(df_a, df_b, n_runs=NUM_RUNS, seeds=SEEDS, kolom_x_a='cle
                 )
 
     return all_results
+# ============= SINGLE DATASET EXPERIMENT =============
+
+def run_experiments_single_dataset(df, dataset_name='Dataset', n_runs=NUM_RUNS, seeds=SEEDS,
+                                   kolom_x='clean_text', kolom_y='label'):
+    """
+    Jalankan semua kombinasi balancing + model untuk SATU dataset.
+
+    Fungsi ini dibuat sebagai pasangan dari run_all_experiments().
+    Cocok dipakai ketika notebook hanya ingin menjalankan eksperimen pada satu DataFrame.
+
+    Parameters:
+    - df: DataFrame berisi teks dan label
+    - dataset_name: nama dataset untuk tampilan log
+    - n_runs: jumlah run per kombinasi
+    - seeds: list random seed
+    - kolom_x: nama kolom teks
+    - kolom_y: nama kolom label
+
+    Returns:
+    - results: nested dict [balancing][model] = metrik
+    """
+    print("\n" + "=" * 60)
+    print(f"PREPARE FEATURES - {dataset_name}")
+    print("=" * 60)
+
+    X_train_tf, y_one_hot_train, X_test_tf, y_one_hot_test, tfidf = prepare_features(
+        df,
+        dataset_name=dataset_name,
+        kolom_x=kolom_x,
+        kolom_y=kolom_y,
+        seed=seeds[0]
+    )
+
+    results = {}
+
+    print(f"\n{'#' * 70}")
+    print(f"  DATASET: {dataset_name}")
+    print(f"{'#' * 70}")
+
+    for bal_name, bal_class in BALANCING_METHODS.items():
+        results[bal_name] = {}
+
+        for model_name, model_type in MODEL_CONFIGS.items():
+            print(f"\n>> {dataset_name} | {bal_name} | {model_name}")
+            results[bal_name][model_name] = run_multi_experiment(
+                X_train_tf,
+                y_one_hot_train,
+                X_test_tf,
+                y_one_hot_test,
+                model_type,
+                bal_name,
+                bal_class,
+                n_runs=n_runs,
+                seeds=seeds
+            )
+
+    return results
