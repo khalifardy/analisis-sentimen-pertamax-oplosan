@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "method": "SMOTETomek",
+  "seed": 456,
+  "experiment_signature_sha256": "8213c683344da7c393a574cabbf3d39c170e4a645a93fdef2f1d2400e7c51d81",
+  "metrics": {
+    "accuracy": 0.5436615692439617,
+    "precision": 0.7208047447830215,
+    "recall": 0.5436615692439617,
+    "f1": 0.6025529622813697,
+    "f1_macro": 0.3924871766699003,
+    "precision_negative": 0.8449462957862848,
+    "recall_negative": 0.5619047619047619,
+    "f1_negative": 0.6749532504674953,
+    "precision_neutral": 0.31491442542787285,
+    "recall_neutral": 0.48899012908124523,
+    "f1_neutral": 0.38310529446757885,
+    "precision_positive": 0.0696442089326268,
+    "recall_positive": 0.41818181818181815,
+    "f1_positive": 0.11940298507462686
+  },
+  "sampling_time_seconds": 33.65098439999929,
+  "training_time_seconds": 45.72228150000046,
+  "inference_time_seconds": 0.04742009999972652,
+  "sampler": {
+    "class": "SMOTETomek",
+    "parameters": {
+      "n_jobs": null,
+      "random_state": 456,
+      "sampling_strategy": "auto",
+      "smote": null,
+      "tomek": null
+    }
+  },
+  "classifier": {
+    "class": "LogisticRegression",
+    "parameters": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 500,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 456,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "train_shape_before": [
+    27988,
+    768
+  ],
+  "train_shape_after": [
+    65560,
+    768
+  ],
+  "train_distribution_before": {
+    "0": 21890,
+    "1": 5332,
+    "2": 766
+  },
+  "train_distribution_after": {
+    "0": 21840,
+    "1": 21836,
+    "2": 21884
+  },
+  "test_shape": [
+    6997,
+    768
+  ],
+  "test_distribution": {
+    "0": 5460,
+    "1": 1317,
+    "2": 220
+  },
+  "prediction_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\indobertweet_predictions\\SMOTETomek_seed456.npz",
+  "prediction_sha256": "3473ce34ec4d91b2c2f0c97633bec9918259eddb344f27e072ea66e8f9c54875",
+  "classification_report_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\classification_reports\\SMOTETomek_seed456.json",
+  "confusion_matrix_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\confusion_matrices\\SMOTETomek_seed456.npy",
+  "memory_after": {
+    "process_rss_gib": 1.0296669006347656,
+    "system_available_gib": 4.552539825439453,
+    "system_percent_used": 70.4
+  }
+}

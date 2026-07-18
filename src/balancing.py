@@ -36,7 +36,18 @@ from src.models import (
 NUM_RUNS = 3
 SEEDS = [42, 123, 456]
 
+
+class NoBalancing:
+    """No-op balancing — data tetap imbalanced asli (baseline)."""
+    def __init__(self, random_state=42):
+        self.random_state = random_state
+
+    def fit_resample(self, X, y):
+        return X, y
+
+
 BALANCING_METHODS = {
+    'No_Balancing': NoBalancing,
     'ROS':        RandomOverSampler,
     'SMOTE':      SMOTE,
     'RUS':        RandomUnderSampler,
@@ -100,7 +111,8 @@ def run_single_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model
     Jalankan 1 kali eksperimen (1 run).
 
     Returns:
-    - dict metrik: accuracy, precision, recall, f1
+    - dict metrik: accuracy, weighted precision/recall/F1,
+      macro-F1, dan F1 setiap kelas
     """
     callbacks = get_callbacks()
     
@@ -179,12 +191,37 @@ def run_single_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model
     else:
         raise ValueError(f"model_type tidak dikenal: {model_type}")
 
-    # 4. Hitung metrik
+    # 4. Hitung metrik. Urutan label mengikuti definisi dataset:
+    # 0 = negative, 1 = neutral, 2 = positive.
+    class_f1 = f1_score(
+        y_true,
+        y_pred,
+        labels=[0, 1, 2],
+        average=None,
+        zero_division=0,
+    )
+
     return {
         'accuracy': accuracy_score(y_true, y_pred),
-        'precision': precision_score(y_true, y_pred, average='weighted'),
-        'recall': recall_score(y_true, y_pred, average='weighted'),
-        'f1': f1_score(y_true, y_pred, average='weighted'),
+        'precision': precision_score(
+            y_true, y_pred, average='weighted', zero_division=0
+        ),
+        'recall': recall_score(
+            y_true, y_pred, average='weighted', zero_division=0
+        ),
+        'f1': f1_score(
+            y_true, y_pred, average='weighted', zero_division=0
+        ),
+        'f1_macro': f1_score(
+            y_true,
+            y_pred,
+            labels=[0, 1, 2],
+            average='macro',
+            zero_division=0,
+        ),
+        'f1_negative': class_f1[0],
+        'f1_neutral': class_f1[1],
+        'f1_positive': class_f1[2],
     }
 
 
@@ -198,7 +235,16 @@ def run_multi_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model_
     Returns:
     - dict metrik dengan mean, std, dan detail per run
     """
-    metrics = {'accuracy': [], 'precision': [], 'recall': [], 'f1': []}
+    metrics = {
+        'accuracy': [],
+        'precision': [],
+        'recall': [],
+        'f1': [],
+        'f1_macro': [],
+        'f1_negative': [],
+        'f1_neutral': [],
+        'f1_positive': [],
+    }
 
     for run_idx, seed in enumerate(seeds[:n_runs]):
         print(f"  Run {run_idx + 1}/{n_runs} (seed={seed})...", end=' ')
@@ -211,7 +257,11 @@ def run_multi_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model_
         for k, v in result.items():
             metrics[k].append(v)
 
-        print(f"Acc={result['accuracy']:.4f} | F1={result['f1']:.4f}")
+        print(
+            f"Acc={result['accuracy']:.4f} | "
+            f"Weighted-F1={result['f1']:.4f} | "
+            f"Macro-F1={result['f1_macro']:.4f}"
+        )
 
     # Rangkuman
     summary = {}
@@ -224,8 +274,10 @@ def run_multi_experiment(X_train, y_one_hot_train,X_test, y_one_hot_test, model_
 
     print(f"  >> RATA-RATA: Acc={summary['accuracy']['mean']:.4f} "
           f"(±{summary['accuracy']['std']:.4f}) | "
-          f"F1={summary['f1']['mean']:.4f} "
-          f"(±{summary['f1']['std']:.4f})")
+          f"Weighted-F1={summary['f1']['mean']:.4f} "
+          f"(±{summary['f1']['std']:.4f}) | "
+          f"Macro-F1={summary['f1_macro']['mean']:.4f} "
+          f"(±{summary['f1_macro']['std']:.4f})")
 
     return summary
 

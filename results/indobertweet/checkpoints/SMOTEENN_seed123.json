@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "method": "SMOTEENN",
+  "seed": 123,
+  "experiment_signature_sha256": "8213c683344da7c393a574cabbf3d39c170e4a645a93fdef2f1d2400e7c51d81",
+  "metrics": {
+    "accuracy": 0.21823638702300985,
+    "precision": 0.6900896502800589,
+    "recall": 0.21823638702300985,
+    "f1": 0.1901474280531964,
+    "f1_macro": 0.19376926404240027,
+    "precision_negative": 0.8313458262350937,
+    "recall_negative": 0.08937728937728938,
+    "f1_negative": 0.16140234827187036,
+    "precision_neutral": 0.21096570397111913,
+    "recall_neutral": 0.7099468488990129,
+    "f1_neutral": 0.3252739606888154,
+    "precision_positive": 0.0525783619817998,
+    "recall_positive": 0.4727272727272727,
+    "f1_positive": 0.09463148316651501
+  },
+  "sampling_time_seconds": 35.086394899999505,
+  "training_time_seconds": 34.79778559999977,
+  "inference_time_seconds": 0.04316269999981159,
+  "sampler": {
+    "class": "SMOTEENN",
+    "parameters": {
+      "enn": null,
+      "n_jobs": null,
+      "random_state": 123,
+      "sampling_strategy": "auto",
+      "smote": null
+    }
+  },
+  "classifier": {
+    "class": "LogisticRegression",
+    "parameters": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 500,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 123,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "train_shape_before": [
+    27988,
+    768
+  ],
+  "train_shape_after": [
+    44001,
+    768
+  ],
+  "train_distribution_before": {
+    "0": 21890,
+    "1": 5332,
+    "2": 766
+  },
+  "train_distribution_after": {
+    "0": 1366,
+    "1": 20816,
+    "2": 21819
+  },
+  "test_shape": [
+    6997,
+    768
+  ],
+  "test_distribution": {
+    "0": 5460,
+    "1": 1317,
+    "2": 220
+  },
+  "prediction_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\indobertweet_predictions\\SMOTEENN_seed123.npz",
+  "prediction_sha256": "4473745c83523efaf87b739f7e98b55c9aafaa557d79a7e9fb8f10b21e45cd10",
+  "classification_report_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\classification_reports\\SMOTEENN_seed123.json",
+  "confusion_matrix_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\confusion_matrices\\SMOTEENN_seed123.npy",
+  "memory_after": {
+    "process_rss_gib": 1.166229248046875,
+    "system_available_gib": 3.7196998596191406,
+    "system_percent_used": 75.9
+  }
+}

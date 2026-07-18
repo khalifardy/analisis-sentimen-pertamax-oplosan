@@ -1,0 +1,20 @@
+{
+  "tables": {
+    "indobertweet_7_results.csv": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\indobertweet_7_results.csv",
+    "all_49_weighted_f1.csv": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\all_49_weighted_f1.csv",
+    "all_49_macro_f1.csv": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\all_49_macro_f1.csv",
+    "all_49_classwise_f1.csv": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\all_49_classwise_f1.csv"
+  },
+  "figures": {
+    "ranked_weighted_f1_49.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\ranked_weighted_f1_49.png",
+    "ranked_macro_f1_49.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\ranked_macro_f1_49.png",
+    "best_indobertweet_confusion_matrix.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\best_indobertweet_confusion_matrix.png",
+    "best_overall_confusion_matrix_existing_evidence.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\best_overall_confusion_matrix_existing_evidence.png",
+    "classwise_f1_key_configurations.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\classwise_f1_key_configurations.png",
+    "indobertweet_three_seed_stability.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\indobertweet_three_seed_stability.png",
+    "indobertweet_training_time.png": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\figures\\indobertweet_training_time.png"
+  },
+  "limitations": [
+    "The best-overall TF-IDF confusion matrix is copied from existing saved evidence; per-seed predictions were not stored by the historical pipeline."
+  ]
+}

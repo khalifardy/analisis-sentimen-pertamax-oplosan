@@ -19,6 +19,10 @@ env/
 # Keras Tuner results (besar, tidak perlu di-push)
 tuner_*/
 tuner_results*/
+results/indobertweet/cache/
+results_before_rerun/
+__marimo__/session/
+notebook_merimo/__marimo__/session/
 
 # Model files (besar)
 *.h5

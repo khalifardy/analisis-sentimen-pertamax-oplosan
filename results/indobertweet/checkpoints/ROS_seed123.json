@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "method": "ROS",
+  "seed": 123,
+  "experiment_signature_sha256": "8213c683344da7c393a574cabbf3d39c170e4a645a93fdef2f1d2400e7c51d81",
+  "metrics": {
+    "accuracy": 0.5503787337430327,
+    "precision": 0.7267001792554387,
+    "recall": 0.5503787337430327,
+    "f1": 0.6108535483887783,
+    "f1_macro": 0.3965364510639284,
+    "precision_negative": 0.8502847843775427,
+    "recall_negative": 0.5741758241758241,
+    "f1_negative": 0.6854706461134799,
+    "precision_neutral": 0.32406921866806504,
+    "recall_neutral": 0.46924829157175396,
+    "f1_neutral": 0.38337468982630274,
+    "precision_positive": 0.0698503207412687,
+    "recall_positive": 0.44545454545454544,
+    "f1_positive": 0.12076401725200246
+  },
+  "sampling_time_seconds": 0.08752689999892027,
+  "training_time_seconds": 49.25859280000077,
+  "inference_time_seconds": 0.04553539999869827,
+  "sampler": {
+    "class": "RandomOverSampler",
+    "parameters": {
+      "random_state": 123,
+      "sampling_strategy": "auto",
+      "shrinkage": null
+    }
+  },
+  "classifier": {
+    "class": "LogisticRegression",
+    "parameters": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 500,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 123,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "train_shape_before": [
+    27988,
+    768
+  ],
+  "train_shape_after": [
+    65670,
+    768
+  ],
+  "train_distribution_before": {
+    "0": 21890,
+    "1": 5332,
+    "2": 766
+  },
+  "train_distribution_after": {
+    "0": 21890,
+    "1": 21890,
+    "2": 21890
+  },
+  "test_shape": [
+    6997,
+    768
+  ],
+  "test_distribution": {
+    "0": 5460,
+    "1": 1317,
+    "2": 220
+  },
+  "prediction_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\indobertweet_predictions\\ROS_seed123.npz",
+  "prediction_sha256": "a0429f7084ccb1140d6618480138324c12d871fc04725a4328fb405bdb0b113f",
+  "classification_report_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\classification_reports\\ROS_seed123.json",
+  "confusion_matrix_path": "C:\\Users\\Asus\\Documents\\Kuliah\\9\\Akhir\\Codes\\analisis-sentimen-pertamax-oplosan\\results\\indobertweet\\confusion_matrices\\ROS_seed123.npy",
+  "memory_after": {
+    "process_rss_gib": 1.0327072143554688,
+    "system_available_gib": 2.731372833251953,
+    "system_percent_used": 82.3
+  }
+}
